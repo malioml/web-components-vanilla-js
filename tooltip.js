@@ -19,9 +19,17 @@ class Tooltip extends HTMLElement {
             ::slotted(.highlight) {
                 border-bottom: 1px dotted red;
             }
+            
+            .icon {
+                background: black;
+                color: white;
+                padding: 0.4rem 0.4rem;
+                text-align: center;
+                border-radius: 50%;
+            }
         </style>
         <slot>Some default</slot>
-        <span>(?)</span>
+        <span class="icon">(?)</span>
     `;
   }
 
