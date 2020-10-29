@@ -10,6 +10,10 @@
         div {
             border: 2px solid orange;
         }
+
+        .highlight {
+            background-color: yellow;
+        }
     </style>
     <script src="tooltip.js"></script>
     <script src="confirmLink.js"></script>
@@ -17,7 +21,9 @@
 </head>
 <body>
     <p>
-        <uc-tooltip text="Web Components is a set of standards."> WebComponents</uc-tooltip> are awesome!
+        <uc-tooltip text="Web Components is a set of standards.">
+            <span class="highlight">WebComponents</span>
+        </uc-tooltip> are awesome!
     </p>
     <uc-tooltip></uc-tooltip>
     <div>this does not get the web component styles!</div>
