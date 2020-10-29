@@ -1,4 +1,4 @@
-class infoToggle extends HTMLElement {
+class InfoToggle extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -36,4 +36,4 @@ class infoToggle extends HTMLElement {
   }
 }
 
-customElements.define('uc-info-toggle', infoToggle);
+customElements.define('uc-info-toggle', InfoToggle);
