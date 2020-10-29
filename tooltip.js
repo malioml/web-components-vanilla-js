@@ -12,6 +12,11 @@ class Tooltip extends HTMLElement {
                 position: absolute;
                 z-index: 10;
             }
+            
+            :host {
+                background: #ccc;
+            }
+            
             .highlight {
                 background-color: red;
             }
