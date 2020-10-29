@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Components</title>
+    <style>
+        div {
+            border: 2px solid orange;
+        }
+    </style>
+    <script src="tooltip.js"></script>
+    <script src="confirmLink.js"></script>
+    <script src="infoToggle.js"></script>
+</head>
+<body>
+    <p>
+        <uc-tooltip text="Web Components is a set of standards."> WebComponents</uc-tooltip> are awesome!
+    </p>
+    <uc-tooltip></uc-tooltip>
+    <div>this does not get the web component styles!</div>
+    <br>
+    <a is="uc-confirm-link" href="https://www.google.es">Google</a>
+    <br>
+    <uc-info-toggle is-visible="true">This works!</uc-info-toggle>
+</body>
+</html>
