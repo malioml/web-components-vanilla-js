@@ -15,6 +15,11 @@
             --color-primary: #a4e6fc;
         }
 
+        body {
+            margin: 2rem;
+            font-family: sans-serif;
+        }
+
         div {
             border: 2px solid orange;
         }
@@ -32,6 +37,7 @@
     <script src="tooltip.js"></script>
     <script src="confirmLink.js"></script>
     <script src="infoToggle.js"></script>
+    <script src="modal.js"></script>
 </head>
 <body>
     <p>
@@ -45,5 +51,20 @@
     <a is="uc-confirm-link" href="https://www.google.es">Google</a>
     <br>
     <uc-info-toggle is-visible="true">This works!</uc-info-toggle>
+    <uc-modal>
+        <p>With your confirmation you agree to pay the full amount!</p>
+    </uc-modal>
+    <p>Please confirm your choice.</p>
+    <button> Show Details & Confirm</button>
+    <script>
+        const confirmButton = document.querySelector('button');
+        const modal = document.querySelector('uc-modal');
+        confirmButton.addEventListener('click', event => {
+            event.preventDefault();
+            if (!modal.isOpen) {
+              modal.open();
+            }
+        });
+    </script>
 </body>
 </html>
